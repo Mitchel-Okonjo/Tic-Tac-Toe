@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 
 :root {
   --header-color: #fffbeb;
   --header-font: "Rampart One", sans-serif;
   --content-font: "Permanent Marker", sans-serif;
-  --gamebox-font: "Fredoka One", sans-serif;
+  --gamebox-font: "ABeeZee", sans-serif;
 }
 
 * {
@@ -56,13 +56,14 @@ body {
 .game-box {
   padding: 10px;
   border: 2px solid black;
-  font-family: var(--gamebox-font);
+  font-family: var(--content-font);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 100px;
   box-shadow: 2px 2px 5px 2px lightgray;
   border: 2px dotted black;
+  border-radius: 10px;
 }
 
 button.restart {
