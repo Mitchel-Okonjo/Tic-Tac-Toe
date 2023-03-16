@@ -71,6 +71,10 @@ body {
   cursor: pointer;
 }
 
+.game-box:active {
+  transform: scale(0.95);
+}
+
 button.restart {
   padding: 15px 50px;
   outline: none;
@@ -83,6 +87,10 @@ button.restart {
 }
 
 .restart:hover {
-  background-color: #fef3c7;
   cursor: pointer;
+}
+
+.restart:active {
+  background-color: #fef3c7;
+  transform: scale(0.95);
 }

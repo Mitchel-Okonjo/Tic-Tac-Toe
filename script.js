@@ -39,10 +39,14 @@ const displayController = (() => {
       if (gameController.getGameOver() || e.target.textContent !== "") return;
       gameController.playRound(parseInt(e.target.dataset.index));
       updateGameBoard();
+      e.target.classList.remove("game-box");
     });
   });
 
   restart.addEventListener("click", (e) => {
+    boxes.forEach((box) => {
+      box.classList.add("game-box");
+    });
     gameBoard.resetLayout();
     gameController.resetGame();
     updateGameBoard();
