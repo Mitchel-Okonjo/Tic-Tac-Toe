@@ -53,8 +53,8 @@ body {
   gap: 10px;
 }
 
-.game-box {
-  padding: 10px;
+.gameboard > * {
+  padding: 0;
   border: 2px solid black;
   font-family: var(--content-font);
   display: flex;
@@ -66,6 +66,11 @@ body {
   border-radius: 10px;
 }
 
+.game-box:hover {
+  background-color: var(--header-color);
+  cursor: pointer;
+}
+
 button.restart {
   padding: 15px 50px;
   outline: none;
@@ -75,4 +80,9 @@ button.restart {
   background-color: var(--header-color);
   font-family: var(--header-font);
   font-size: 30px;
+}
+
+.restart:hover {
+  background-color: #fef3c7;
+  cursor: pointer;
 }
